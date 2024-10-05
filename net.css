@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F15B5D;
+    color: white;
+    position: relative;
+    min-height: 100vh;
+}
+
+body::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    background: url('https://res.cloudinary.com/dqj0oallu/image/upload/v1728019593/bg-intro-desktop_vxnrin.png');
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 120px;
+    position: relative;
+    z-index: 2;
+
+
+.left-section {
+    width: 45%;
+}
+
+.left-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.left-section p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.first {
+    width: 35%;
+}
+
+.right-section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    color: black;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.offer-banner {
+    background-color: #5C47C2;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+form input.error {
+    border-color: red;
+}
+
+.error-message {
+    display: none;
+    color: red;
+    font-size: 13px;
+    position: absolute;
+    top: 35px;
+    margin: 2px;
+}
+
+form button {
+    padding: 15px;
+    background-color: #2DCB7B;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #29b369;
+}
+
+.terms {
+    font-size: 0.9rem;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.terms a {
+    color: #F15B5D;
+    text-decoration: none;
+}
+
+/* Responsive Styling */
+
+/* Tablets and small laptops */
+@media (max-width: 1024px) {
+    .container {
+        padding: 80px;
+    }
+
+    .left-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .left-section p {
+        font-size: 1rem;
+    }
+
+    .right-section {
+        padding: 20px;
+    }
+}
+
+/* Mobile Phones and Small Devices */
+@media (max-width: 770px) {
+
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        gap: 10%;
+    }
+
+    .left-section {
+        margin-top: 101%;
+
+    }
+    .first {
+        width: 78%;
+    }
+    .left-section h1 {
+        font-size: 24px;
+        /* margin-bottom: 15px; */
+        font-family: sans-serif;
+        font-weight: 900;
+    }
+
+    .left-section p {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    .right-section {
+        width: 100%;
+    }
+
+    .right-section form {
+        width: 100%;
+    }
+    form button {
+        padding: 10px;
+        background-color: #2DCB7B;
+        color: white;
+        font-size: 14px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+   
+}
+
+}
